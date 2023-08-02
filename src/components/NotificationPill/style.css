@@ -1,0 +1,16 @@
+.pill {
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: #ECEDEF;
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.pill:hover {
+    opacity: 0.8;
+}

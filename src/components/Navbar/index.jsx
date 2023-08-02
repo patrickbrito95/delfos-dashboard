@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './style.css';
 import { NavbarItem } from '../NavbarItem';
+import { useLocation } from 'react-router-dom';
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [hover, setHover] = useState(false)
+    const [hover, setHover] = useState(false);
 
     const handleMouseEnter = () => {
         setHover(true);
@@ -15,25 +16,37 @@ export const Navbar = () => {
     };
 
     const handleOpenNavbar = () => {
-        setOpen(true);
-    }
+        // Abrir o navbar somente se o hover for falso
+        if (!hover) {
+            setOpen(true);
+        }
+    };
 
+    const isActiveRoute = location.pathname === `/${name.toLowerCase()}`;
 
+    console.log(isActiveRoute)
 
     return (
-        <div className={`navbar${hover ? "-opener" : open ? "-fixed" : ""}`}
+        <div
+            className={`navbar${hover ? "-opener" : open ? "-fixed" : ""}`}
             onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
-            <div onClick={handleOpenNavbar}>
-                <div className={`${hover || open ? 'wrapper-close' : "wrapper-close-transparent"}`}>
+            onMouseLeave={handleMouseLeave}
+        >
+            <div
+                onClick={handleOpenNavbar}
+                className="wrapper-hover-control"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
+                <div onClick={() => setHover(false)} className={`${hover || open ? 'wrapper-close' : "wrapper-close-transparent"}`}>
                     <NavbarItem open={open} hover={hover} name="Fechar menu" iconName="menu" />
                 </div>
-                <NavbarItem open={open} hover={hover} name="Highlights" iconName="map" />
-                <NavbarItem open={open} hover={hover} name="Ocorrências" iconName="speakerphone" />
-                <NavbarItem open={open} hover={hover} name="Performance" iconName="chart-bar" />
-                <NavbarItem open={open} hover={hover} name="Energy Losses" iconName="trending-down" />
-                <NavbarItem open={open} hover={hover} name="Análises" iconName="beaker" />
-                <NavbarItem open={open} hover={hover} name="Relatórios" iconName="clipboard-list" />
+                <NavbarItem isActiveRoute={location.pathname === `/highlights`} open={open} hover={hover} name="Highlights" iconName="map" location={location} />
+                <NavbarItem open={open} hover={hover} name="Ocorrências" iconName="speakerphone" location={location} />
+                <NavbarItem open={open} hover={hover} name="Performance" iconName="chart-bar" notifications={22} location={location} />
+                <NavbarItem open={open} hover={hover} name="Energy Losses" iconName="trending-down" notifications={25} location={location} />
+                <NavbarItem open={open} hover={hover} name="Análises" iconName="beaker" location={location} />
+                <NavbarItem open={open} hover={hover} name="Relatórios" iconName="clipboard-list" location={location} />
             </div>
             <div>
                 <NavbarItem open={open} hover={hover} name="Configurações" iconName="cog" />
@@ -43,5 +56,5 @@ export const Navbar = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
