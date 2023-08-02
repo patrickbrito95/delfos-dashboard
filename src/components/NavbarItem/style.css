@@ -1,0 +1,27 @@
+.wrapper-icon {
+    display: flex;
+    margin: 20px 0px 12px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+
+.wrapper-icon-named {
+    display: flex;
+    margin: 20px 0px 8px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+.wrapper-icon div {
+    margin-top: -2px;
+    white-space: nowrap;
+}
+
+.wrapper-icon-named div {
+    margin-left: 26px;
+    margin-top: 2px;
+    white-space: nowrap;
+}

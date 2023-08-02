@@ -1,8 +1,66 @@
 .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 56px;
     background-color: #FFFFFF;
     margin-top: -56px;
-    position: fixed;
-    height: 100vh;
-    border: 1px solid #CFD4E5
+    position: relative;
+    height: 98.5vh;
+    border: 1px solid #CFD4E5;
+    padding: 12px 0px 19px 0px;
+}
+
+.navbar-opener {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 305px;
+    background-color: #FFFFFF;
+    margin-top: -56px;
+    position: relative;
+    height: 98.5vh;
+    border: 1px solid #CFD4E5;
+    padding: 12px 0px 0px 0px;
+    border-radius: 0 8px 8px 0;
+    transition: width 0.05s ease;
+}
+
+.navbar-fixed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 305px;
+    background-color: #FFFFFF;
+    margin-top: -56px;
+    position: relative;
+    height: 98.5vh;
+    border: 1px solid #CFD4E5;
+    padding: 12px 0px 0px 0px;
+    border-radius: 0 8px 8px 0;
+    transition: width 0.05s ease;
+}
+
+.wrapper-close {
+    border-bottom: 1px solid #CFD4E5;
+    margin-top: -12px;
+}
+
+.wrapper-close-transparent {
+    border-bottom: 1px solid #ffffff;
+    margin-top: -12px
+}
+
+.ecopower-navbar-item-closed {
+    padding-bottom: 15px;
+    display: flex;
+    border-radius: 0px;
+}
+
+.ecopower-navbar-item-open {
+    background-color: #0B1C2C;
+    color: #ffffff;
+    padding-bottom: 15px;
+    display: flex;
+    border-radius: 0px 0px 8px 0px;
 }
