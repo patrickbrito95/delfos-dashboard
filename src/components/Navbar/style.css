@@ -1,0 +1,8 @@
+.navbar {
+    width: 56px;
+    background-color: #FFFFFF;
+    margin-top: -56px;
+    position: fixed;
+    height: 100vh;
+    border: 1px solid #CFD4E5
+}

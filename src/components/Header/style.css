@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+
+    justify-content: space-between;
+    background-color: #EFF2F4;
+    height: 56px;
+    padding-left: 75px;
+    border-bottom: 1px solid #CFD4E5;
+}
+
+.header h3 {
+    font-weight: 600;
+    font-size: 24px;
+    align-self: center;
+}
+
+.header-left {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #CFD4E5;
+
+}
+
+.wrapper-title {
+    display: flex;
+}
+
+.real-time {
+    display: flex;
+    margin-left: 15px;
+    border: 1px solid #F42829;
+    color: #F42829;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 5px 7px 5px 7px;
+    height: 20px;
+    align-self: center;
+}
+
+.calender {
+    display: flex;
+    align-self: center;
+}
+
+.real-time-dot {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 2px;
+    background-color: #F42829;
+    align-self: center;
+    margin-right: 4px;
+    border-radius: 50%;
+    animation: piscar 1s infinite;
+}
+
+  @keyframes piscar {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+.header-right {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 450px;
+}
+
+
+
+.title-text {
+    font-size: 10px;
+    color: #8C97A1;
+    font-weight: 500;
+}
+
+
+.region-tag {
+    display: flex;
+    align-self: center;
+    padding: 0px 7px 0px 7px;
+    border-radius: 4px;
+    background-color: #FFE2CC;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7005;
+    
+}
