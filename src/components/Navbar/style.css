@@ -69,3 +69,18 @@
 .ecopower-navbar-item-open {
     font-weight: 600;
 }
+
+.custom-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.custom-link:visited {
+    color: #000000;
+    background-color: transparent;
+}
+
+.custom-link:focus {
+    color: #000000;
+    background-color: transparent;
+}

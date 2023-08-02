@@ -45,7 +45,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -62,7 +62,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -79,7 +79,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -96,7 +96,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -113,7 +113,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -130,7 +130,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -147,7 +147,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"

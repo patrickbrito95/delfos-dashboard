@@ -15,9 +15,10 @@
     margin-left: 17px;
     cursor: pointer;
     position: absolute;
-    background-color: red;
-    width: 5px;
-    height: 30px;
+    background-color: #FF7D1A;
+    border-radius: 0px 5px 5px 0px;
+    width: 4px;
+    height: 35px;
     left: -17px;
 }
 
@@ -32,18 +33,34 @@
     cursor: pointer;
 }
 
+.icon-named-active {
+    position: relative;
+    display: flex;
+    margin: 20px 0px 8px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 17px;
+    cursor: pointer;
+    position: absolute;
+    background-color: #FF7D1A;
+    border-radius: 0px 5px 5px 0px;
+    width: 4px;
+    height: 35px;
+    left: -43px;
+}
+
 .wrapper-icon-named:hover {
     font-weight: 600;
 }
 
 .wrapper-icon div {
-    margin-top: -2px;
+    margin-top: -4px;
     white-space: nowrap;
 }
 
 .wrapper-icon-named div {
     margin-left: 26px;
-    margin-top: 2px;
+    margin-top: -4px;
     white-space: nowrap;
 }
 
