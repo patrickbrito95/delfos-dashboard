@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import Icon from '../Icon';
-import { BeakerIcon } from '@heroicons/react/24/solid'
+import { InputDate } from '../InputDate';
 
 
 export const Header = () => {
@@ -18,26 +18,31 @@ export const Header = () => {
                     </div>
                 </div>
                 <div className="calender">
-                    <Icon name="calendar" />
-                    <div className='title-text'>
-                        Data
-                    </div>
                     <div>
-                        <input type='date' />
+                        <InputDate />
                     </div>
                 </div>
             </div>
             <div className="header-right">
                 <div className="portifolio-box">
                     <div className="title-text">
-                        Visualizando
+                        <span>
+                            Visualizando
+                        </span>
                     </div>
                     <div className="portifolio">
-                        Portifólio
+                        <div className="portifolio-text">
+                            Portifólio
+                        </div>
+                        <Icon name="chevron-right" />
                     </div>
                 </div>
                 <div className='region-tag'>
                     Parque Ventos do Agreste
+                    <div className='icon-tags'>
+                        <Icon name="selector" color="#FF7005" />
+                        <Icon name="x-mark" color="#FF7005" />
+                    </div>
                 </div>
             </div>
         </div>

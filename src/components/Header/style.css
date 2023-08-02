@@ -44,6 +44,7 @@
 .calender {
     display: flex;
     align-self: center;
+    margin-right: 16px;
 }
 
 .real-time-dot {
@@ -71,14 +72,22 @@
     align-self: center;
     justify-content: space-between;
     width: 450px;
+    margin-left: 16px;
 }
-
 
 
 .title-text {
     font-size: 10px;
     color: #8C97A1;
     font-weight: 500;
+}
+
+.portifolio {
+    display: flex;
+}
+
+.portifolio-text {
+    margin-top: -5px;
 }
 
 
@@ -91,5 +100,15 @@
     font-size: 16px;
     font-weight: 500;
     color: #FF7005;
-    
+    white-space: nowrap;
+    margin-right: 16px;
+    margin-right: 6px;
 }
+
+.icon-tags {
+    display: flex;
+    align-self: center;
+    margin-left: 6px;
+}
+
+

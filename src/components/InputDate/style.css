@@ -1,0 +1,39 @@
+.wrapper-box-calendar {
+    display: flex;
+    cursor: pointer;
+    height: 32px;
+    margin-right: 6px;
+}
+
+.ajust-icon {
+    margin-top: 5px;
+}
+
+.custom-input {
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+    width: 70px;
+}
+
+.wrapper-icon-calendar {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    border-radius: 4px;
+    background-color: #0C111C;
+    min-width: 32px;
+    min-height: 32px;
+
+}
+
+.wrapper-datepicker {
+    display: flex;
+    margin-top: -6px;
+}
+
+.title-text {
+    font-size: 10px;
+    color: #8C97A1;
+    font-weight: 500;
+}
