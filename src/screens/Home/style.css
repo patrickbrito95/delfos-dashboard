@@ -3,9 +3,9 @@
     z-index: 0;
 }
 
-.teste {
+.card-status {
     position:absolute;
-    z-index: 99999999;
-    width: 1px;
-    height: 1px
+    z-index: 999999;
+    width: 600px;
+    height: auto;
 }

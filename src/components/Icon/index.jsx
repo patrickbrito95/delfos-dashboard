@@ -300,10 +300,10 @@ const Icon = (props) => {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-arrow-left"
-                    width="24"
-                    height="24"
+                    width="12"
+                    height="12"
                     viewBox="0 0 24 24"
-                    strokeWidth="1.5"
+                    strokeWidth="3"
                     stroke="#000000"
                     fill="none"
                     strokeLinecap="round"
@@ -370,6 +370,15 @@ const Icon = (props) => {
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.5 1.5V5H10L5.5 10.5V7H2L6.5 1.5Z" fill="#0B1C2C" />
                 </svg>
+            );
+        case "avaliation":
+            return (
+                <svg width="42" height="20" viewBox="0 0 43 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 5.21387C19.3954 5.21387 18.5 6.1093 18.5 7.21387V19.4639H24.5V7.21387C24.5 6.1093 23.6046 5.21387 22.5 5.21387H20.5ZM9.5 9.58887C9.5 8.4843 10.3954 7.58887 11.5 7.58887H13.5C14.6046 7.58887 15.5 8.4843 15.5 9.58887V19.4639H9.5V9.58887ZM0.5 11.9639C0.5 10.8593 1.39543 9.96387 2.5 9.96387H4.5C5.60457 9.96387 6.5 10.8593 6.5 11.9639V19.4639H0.5V11.9639Z" fill="#FFDE54" />
+                    <path d="M28 5C28 3.89543 28.8954 3 30 3H32C33.1046 3 34 3.89543 34 5V20H28V5Z" fill="#E5E9EE" />
+                    <path d="M37 2C37 0.895431 37.8954 0 39 0H41C42.1046 0 43 0.895431 43 2V19H37V2Z" fill="#E5E9EE" />
+                </svg>
+
             );
         default:
             return null;
