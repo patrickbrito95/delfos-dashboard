@@ -6,6 +6,6 @@
 .teste {
     position:absolute;
     z-index: 99999999;
-    width: 400px;
-    height: 400px
+    width: 1px;
+    height: 1px
 }

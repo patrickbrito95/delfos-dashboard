@@ -1,0 +1,47 @@
+
+.custom-popup {
+
+}
+
+.custom-popup-title {
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+}
+
+.custom-popup-middle-info {
+    display: flex;
+}
+
+.wrapper-turbine-info {
+    width: 47px;
+    height: 18px;
+    padding: 0px 0px 0px 4px;
+    margin-right: 4px;
+    border-radius: 1px;
+    background: #0b1c2c47;
+    color: #0B1C2C;
+}
+
+.custom-popup-bottom-info {
+
+}
+
+.wrapper-speaker-info {
+    width: 36px;
+    height: 18px;
+    padding: 0px 0px 0px 4px;
+    border-radius: 1px;
+    background: #0b1c2c47;
+    color: #0B1C2C;
+}
+
+.wrapper-bolt-info {
+    width: 82px;
+    height: 18px;
+    padding: 0px 0px 0px 4px;
+    margin-top: 3px;
+    border-radius: 1px;
+    background: #0b1c2c47;
+    color: #0B1C2C;
+}

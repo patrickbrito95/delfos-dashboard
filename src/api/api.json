@@ -1,0 +1,123 @@
+[
+    {
+      "title": "Subparque 01",
+      "lat": -3.71839,
+      "long": -38.5434,
+      "power": "08/10",
+      "reach": "09",
+      "energy": 10
+    },
+    {
+      "title": "Subparque 02",
+      "lat": -3.73186,
+      "long": -38.5267,
+      "power": "09/10",
+      "reach": "07",
+      "energy": 50
+    },
+    {
+      "title": "Subparque 03",
+      "lat": -3.76001,
+      "long": -38.5863,
+      "power": "6/10",
+      "reach": "05",
+      "energy": 60
+    },
+    {
+      "title": "Subparque 04",
+      "lat": -3.80166,
+      "long": -38.5766,
+      "power": "09/10",
+      "reach": "03",
+      "energy": 70
+    },
+    {
+      "title": "Subparque 05",
+      "lat": -3.74603,
+      "long": -38.4897,
+      "power": "10/10",
+      "reach": "05",
+      "energy": 100
+    },
+    {
+      "title": "Subparque 06",
+      "lat": -3.72434,
+      "long": -38.5419,
+      "power": "03/10",
+      "reach": "08",
+      "energy": 30
+    },
+    {
+      "title": "Subparque 07",
+      "lat": -3.79061,
+      "long": -38.6216,
+      "power": "05/10",
+      "reach": "10",
+      "energy": 50
+    },
+    {
+      "title": "Subparque 08",
+      "lat": -3.77385,
+      "long": -38.5722,
+      "power": "09/10",
+      "reach": "05",
+      "energy": 90
+    },
+    {
+      "title": "Subparque 09",
+      "lat": -3.74727,
+      "long": -38.5051,
+      "power": "10/10",
+      "reach": "09",
+      "energy": 100
+    },
+    {
+      "title": "Subparque 10",
+      "lat": -3.75589,
+      "long": -38.5548,
+      "power": "10/10",
+      "reach": "07",
+      "energy": 100
+    },
+    {
+      "title": "Subparque 11",
+      "lat": -3.72242,
+      "long": -38.5276,
+      "power": "10/10",
+      "reach": "10",
+      "energy": 100
+    },
+    {
+      "title": "Subparque 12",
+      "lat": -3.73099,
+      "long": -38.5279,
+      "power": "10/10",
+      "reach": "10",
+      "energy": 100
+    },
+    {
+      "title": "Subparque 13",
+      "lat": -3.74962,
+      "long": -38.5272,
+      "power": "10/10",
+      "reach": "10",
+      "energy": 100
+    },
+    {
+      "title": "Subparque 14",
+      "lat": -3.71609,
+      "long": -38.5475,
+      "power": "09/10",
+      "reach": "09",
+      "energy": 90
+    },
+    {
+      "title": "Subparque 15",
+      "lat": -3.76741,
+      "long": -38.5243,
+      "power": "08/10",
+      "reach": "10",
+      "energy": 80
+    }
+  ]
+  
