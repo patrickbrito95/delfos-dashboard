@@ -5,10 +5,11 @@
     width: 56px;
     background-color: #FFFFFF;
     margin-top: -56px;
-    position: relative;
+    position: fixed;
     height: 98.5vh;
     border: 1px solid #CFD4E5;
     padding: 12px 0px 19px 0px;
+    z-index: 9999999;
 }
 
 .navbar-opener {
@@ -18,12 +19,13 @@
     width: 305px;
     background-color: #FFFFFF;
     margin-top: -56px;
-    position: relative;
+    position: fixed;
     height: 98.5vh;
     border: 1px solid #CFD4E5;
     padding: 12px 0px 0px 0px;
     border-radius: 0 8px 8px 0;
     transition: width 0.05s ease;
+    z-index: 9999999;
 }
 
 .navbar-fixed {
@@ -39,6 +41,7 @@
     padding: 12px 0px 0px 0px;
     border-radius: 0 8px 8px 0;
     transition: width 0.05s ease;
+    z-index: 9999999;
 }
 
 .wrapper-close {

@@ -1,0 +1,11 @@
+.dashboard-children {
+    margin-left: 56px;
+    z-index: 0;
+}
+
+.teste {
+    position:absolute;
+    z-index: 99999999;
+    width: 400px;
+    height: 400px
+}

@@ -6,6 +6,7 @@
     height: 56px;
     padding-left: 75px;
     border-bottom: 1px solid #CFD4E5;
+    z-index: 9999999;
 }
 
 .header h3 {
@@ -50,7 +51,6 @@
 .real-time-dot {
     width: 8px;
     height: 8px;
-    margin-bottom: 2px;
     background-color: #F42829;
     align-self: center;
     margin-right: 4px;
