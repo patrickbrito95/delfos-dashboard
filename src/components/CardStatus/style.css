@@ -4,12 +4,23 @@
     padding: 16px;
     border: 1px solid #E5E9EE;
     background: #FFF;
+    overflow-x: scroll;
 }
+
+.wrapper-card-status::-webkit-scrollbar {
+    display: none;
+  }
 
 .card-info-top {
     display: flex;
     justify-content: space-between;
+    min-width: 530px;
+    overflow-x: scroll;
 }
+
+.card-info-top::-webkit-scrollbar {
+    display: none;
+  }
 
 .card-title {
     font-size: 20px;
@@ -115,7 +126,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
+    min-width: 530px;
 }
+
+.card-info-bottom::-webkit-scrollbar {
+    display: none;
+  }
 
 
 
@@ -154,7 +170,6 @@
 
 .corrective-box {
     display: flex;
-    display: flex;
     justify-content: center;
     align-items: center;
     background: #EFF2F4;
@@ -165,6 +180,7 @@
     font-weight: 600;
     border-radius: 2px;
     cursor: pointer;
+    
 }
 
 .alarm-box {

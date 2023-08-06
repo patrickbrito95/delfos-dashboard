@@ -134,17 +134,17 @@
     flex-direction: column;
     justify-content: space-evenly;
     z-index: 9999999999;
-    background-color: #CFD4E5;
+    background-color: #EFF2F4;
     right: 65px;
     left: 56px;
     margin-top: 57px;
-    width: calc(100% - 160px);
+    width: calc(100% - 95px);
     height: 150px;
+    border-radius: 0px 0px 10px 10px;
     padding: 20px;
     -webkit-box-shadow: 0px 5px 19px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 5px 19px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 5px 19px -3px rgba(0,0,0,0.75);
-    border-radius: 0px 0px 15px 0px;
 }
 
 
