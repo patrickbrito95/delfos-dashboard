@@ -218,3 +218,9 @@
 .ajust-chevron-icon {
     margin: 5px 5px 0px 4px;
 }
+
+@media screen and (max-width: 835px) {
+    .card-accordion {
+        min-width: 56px;
+    }
+  }

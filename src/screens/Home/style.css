@@ -1,6 +1,7 @@
 .dashboard-children {
     margin-left: 56px;
     z-index: 0;
+    display: flex;
 }
 
 .card-status {
@@ -9,3 +10,50 @@
     width: 600px;
     height: auto;
 }
+
+.card-accordion {
+    position: absolute;
+    z-index: 999999;
+    right: 0;
+    display: flex;
+    min-width: calc(100% - 655px);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #ffffff;
+}
+
+  /* @media screen and (max-width: 1444px) {
+    .card-accordion {
+        min-width: 45%;
+    }
+  }
+
+  @media screen and (max-width: 1190px) {
+    .card-accordion {
+        min-width: 40%;
+    }
+  }
+
+  @media screen and (max-width: 1085px) {
+    .card-accordion {
+        min-width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .card-accordion {
+        min-width: 22%;
+    }
+  } */
+
+  @media screen and (max-width: 835px) {
+    .card-accordion {
+        min-width: 65px;
+    }
+
+    .card-status {
+        width: calc(100% - 115px);
+    }
+  }

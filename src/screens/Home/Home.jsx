@@ -23,6 +23,9 @@ export const Home = () => {
                         newOccurrences={44}
                     />
                 </div>
+                <div className='card-accordion'>
+                    TESTE
+                </div>
             </div>
         </div>
     )
