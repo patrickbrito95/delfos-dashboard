@@ -1,0 +1,96 @@
+/* .accordion-item {
+} */
+
+.accordion-button {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid #CFD4E5;
+    background: #F9F9F9;
+    cursor: pointer;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.accordion-button-open {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid #CFD4E5;
+    background: #F9F9F9;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.accordion-div-left {
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-notification-box {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 5px 6px;
+    border-radius: 2px;
+    background: #0B1C2C;
+    margin-left: 30px;
+    margin-right: 8px;
+}
+
+.accordion-title {
+    color: #0b1c2c;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 8px;
+    align-self: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.accordion-support-text {
+    color: #8C97A1;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.07px;
+    align-self: center;
+}
+
+.wrapper-icon-right {
+    margin-top: 5px;
+    
+}
+
+.wrapper-icon-left {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+}
+
+.accordion-content {
+    height: auto;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #CFD4E5;
+    background: #FFF;
+}

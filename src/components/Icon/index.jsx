@@ -287,7 +287,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -304,7 +304,7 @@ const Icon = (props) => {
                     height="24"
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
-                    stroke="#000000"
+                    stroke={props.color || "#000000"}
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -351,11 +351,11 @@ const Icon = (props) => {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-arrow-left"
-                    width="24"
-                    height="24"
+                    width="15"
+                    height="15"
                     viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="#000000"
+                    strokeWidth="2"
+                    stroke="#8E91A4"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -396,6 +396,40 @@ const Icon = (props) => {
                     <path d="M37 2C37 0.895431 37.8954 0 39 0H41C42.1046 0 43 0.895431 43 2V19H37V2Z" fill="#E5E9EE" />
                 </svg>
 
+            );
+        case "expand-arrows":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-arrow-left"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="#8E91A4"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                </svg>
+            );
+        case "compress-arrows":
+            return (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-arrow-left"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="#8E91A4"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25" />
+                </svg>
             );
         default:
             return null;

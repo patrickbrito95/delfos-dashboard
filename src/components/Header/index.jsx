@@ -12,7 +12,7 @@ export const Header = () => {
     return (
         <div className="header">
             <div className="header-left">
-                <div className="wrapper-title">
+                <div className="wrapper-title-header">
                     <h3>
                         Highlights
                     </h3>

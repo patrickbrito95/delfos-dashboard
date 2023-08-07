@@ -1,10 +1,8 @@
 import React from 'react';
 import './style.css';
 import Icon from '../Icon';
-import { useMediaQuery } from 'react-responsive';
 
 export const CardStatus = ({ title, iconAvaliation, current, total, newOccurrences, windSpeed }) => {
-    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 690px)' })
 
     return (
         <div className="wrapper-card-status">
