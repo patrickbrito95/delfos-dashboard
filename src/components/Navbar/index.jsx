@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { NavbarItem } from '../NavbarItem';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -22,6 +22,11 @@ export const Navbar = () => {
         }
     };
 
+    const closeNavbar = () => {
+        setOpen(false)
+        setHover(false)
+    }
+
     return (
         <div
             className={`navbar${hover ? "-opener" : open ? "-fixed" : ""}`}
@@ -34,7 +39,7 @@ export const Navbar = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <div onClick={() => setHover(false)} className={`${hover || open ? 'wrapper-close' : "wrapper-close-transparent"}`}>
+                <div onClick={closeNavbar} onTouchStart={closeNavbar} className={`${hover || open ? 'wrapper-close' : "wrapper-close-transparent"}`}>
                     <NavbarItem open={open} hover={hover} name="Fechar menu" iconName="menu" isSection={false} />
                 </div>
                 <Link className='custom-link' to="/">

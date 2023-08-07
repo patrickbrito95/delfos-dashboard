@@ -35,7 +35,7 @@
     width: 305px;
     background-color: #FFFFFF;
     margin-top: -56px;
-    position: relative;
+    position: fixed;
     height: 98.5vh;
     border: 1px solid #CFD4E5;
     padding: 12px 0px 0px 0px;

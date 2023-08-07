@@ -8,6 +8,9 @@ import Icon from '../../components/Icon';
 import Accordion from '../../components/Accordion';
 import { Title } from '../../components/Title';
 import { useMediaQuery } from 'react-responsive';
+import { RiskCard } from '../../components/RiskCard';
+import { PredictiveAlertsCard } from '../../components/PredictiveAlertsCard';
+import { NewOccurrencesCard } from '../../components/NewOccurrencesCard';
 
 export const Home = () => {
     const isExpandEvents = useMediaQuery({ query: '(max-width: 835px)' })
@@ -52,18 +55,18 @@ export const Home = () => {
                         )}
                     </div>
                     <div onClick={() => { isExpandFullScreen && setIsOpen(true) }} className='wrapper-accordion'>
-                        <Accordion iconName="exclamation" title="Riscos" notification="09">
-                            TESTE 1
+                        <Accordion isCompressed={isOpen} iconName="exclamation" title="Riscos" notification="09">
+                            <RiskCard />
                         </Accordion>
                     </div>
                     <div onClick={() => { isExpandFullScreen && setIsOpen(true) }} className='wrapper-accordion'>
-                        <Accordion iconName="hand" title="Alertas Preditivos" notification="15">
-                            TESTE 2
+                        <Accordion isCompressed={isOpen} iconName="hand" title="Alertas Preditivos" notification="15">
+                            <PredictiveAlertsCard />
                         </Accordion>
                     </div>
-                    <div onClick={() => { isExpandFullScreen && setIsOpen(true) }} className='wrapper-accordion'>
-                        <Accordion iconName="speakerphone" title="Novas Ocorrências" notification="23">
-                            TESTE 3
+                    <div onClick={() => { isExpandFullScreen && setIsOpen(true) }} className='wrapper-accordion' style={{ marginBottom: "150px" }}>
+                        <Accordion isCompressed={isOpen} iconName="speakerphone" title="Novas Ocorrências" notification="23">
+                            <NewOccurrencesCard />
                         </Accordion>
                     </div>
                 </div>

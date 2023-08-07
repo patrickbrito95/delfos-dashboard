@@ -1,0 +1,180 @@
+.wrapper-top-card {
+    border-radius: 4px;
+    border: 1px solid #CFD4E5;
+    background: #FFFFFF;
+}
+
+.risk-summary {
+    overflow-x: scroll;
+}
+
+.risk-summary::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper-risk-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 12px 0px 0px;
+}
+
+.wrapper-risk-title span {
+    color: #0B1C2C;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.1px;
+    margin-left: 22px;
+    margin-top: 5px;
+    align-self: end;
+}
+
+.wrapper-risk-button {
+    display: flex;
+    width: auto;
+    height: 40px;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    color: #0B1C2C;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.07px;
+    border-radius: 2px;
+    border: 1px solid #D6DCE3;
+    background: #FFFFFF;
+    margin-left: 20px;
+}
+
+.wrapper-risk-subtitle {
+    border-bottom: 1px solid #CFD4E5;
+    padding-bottom: 27px;
+    color: #615E69;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.08px;
+    padding-left: 22px;
+    margin-top: 5px;
+}
+
+.wrapper-bottom-card {
+    border: 1px solid red;
+    margin-top: 31px;
+    border-radius: 4px;
+    border: 1px solid #CFD4E5;
+    background: #FFFFFF;
+}
+
+.wrapper-data {
+    display: flex;
+    padding: 18px 19px 27px 19px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.wrapper-data::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper-data-top {
+    display: flex;
+}
+
+.wrapper-current-value {
+
+}
+
+.wrapper-current-value span {
+    color: #0B1C2C;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    letter-spacing: -0.07px;
+}
+
+.wrapper-risk-value {
+    color: #0B1C2C;
+    font-family: "Inter";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    letter-spacing: -0.14px;
+}
+
+.wrapper-risk-percent {
+    padding: 0px 24px;
+}
+
+.wrapper-risk-percent span {
+
+}
+
+.percent-number {
+    color: "#F42829"
+}
+
+.risk-prev-date {
+    color: #8C97A1;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.07px;
+}
+
+.percent-number span {
+    color: #F42829;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.08px;
+}
+
+.wrapper-bars {
+    display: flex;
+}
+
+.wrapper-average-bars {
+    margin: 10px;
+}
+
+.wrapper-average-bars span {
+    color: #0B1C2C;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.06px;
+}
+
+.risk-available {
+    overflow-x: scroll;
+}
+
+.risk-available::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width: 1444px) {
+    .wrapper-data {
+        display: block;
+    }
+  }

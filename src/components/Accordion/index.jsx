@@ -36,7 +36,7 @@ export const Accordion = ({ title, children, iconName, notification }) => {
                     <Icon name={`chevron-${isOpen ? 'up' : 'down'}`} />
                 </div>
             </button>
-            {isOpen && <div className="accordion-content">{children}</div>}
+            {isOpen ? <div className="accordion-content">{children}</div> : null}
         </div>
     );
 };

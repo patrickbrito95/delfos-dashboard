@@ -1,0 +1,24 @@
+.bar-with-min-value {
+    position: relative;
+    width: 160px;
+    height: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .bar-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #F42829;
+  }
+  
+  .min-value-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #000;
+    height: 25px;
+  }
+  
