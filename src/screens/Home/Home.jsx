@@ -11,11 +11,19 @@ import { useMediaQuery } from 'react-responsive';
 import { RiskCard } from '../../components/RiskCard';
 import { PredictiveAlertsCard } from '../../components/PredictiveAlertsCard';
 import { NewOccurrencesCard } from '../../components/NewOccurrencesCard';
+import { useNavBarContext } from '../../context/NavBarContext';
 
 export const Home = () => {
     const isExpandEvents = useMediaQuery({ query: '(max-width: 835px)' })
     const isExpandFullScreen = useMediaQuery({ query: '(max-width: 1170px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1070px' })
     const [isOpen, setIsOpen] = useState(false)
+
+    const { isNavBarOpen } = useNavBarContext();
+
+    console.log(isNavBarOpen)
+
+
 
     return (
         <div>
@@ -23,7 +31,7 @@ export const Home = () => {
             <Navbar />
             <div className='dashboard-children'>
                 <Map />
-                <div className='card-status'>
+                <div className={`card-status${isNavBarOpen && !isTabletOrMobile ? '-navbar-props' : ''}`}>
                     <CardStatus
                         title="Parque Ventos do Agreste"
                         iconAvaliation={<Icon name="avaliation" />}
@@ -33,7 +41,7 @@ export const Home = () => {
                         newOccurrences={44}
                     />
                 </div>
-                <div className={`card-accordion${isOpen ? '-open' : ''}`}>
+                <div className={`card-accordion${isOpen ? `-open` : isNavBarOpen && !isTabletOrMobile ? '-navbar-props' : ''}`}>
                     <div className='wrapper-title'>
                         {isExpandEvents ? (
                             <div className='wrapper-expand-events'>

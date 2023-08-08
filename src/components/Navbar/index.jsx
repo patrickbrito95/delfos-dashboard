@@ -2,34 +2,41 @@ import React, { useState } from 'react';
 import './style.css';
 import { NavbarItem } from '../NavbarItem';
 import { Link } from 'react-router-dom';
+import { useNavBarContext } from '../../context/NavBarContext';
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [hover, setHover] = useState(false);
+    const { setIsNavBarOpen } = useNavBarContext();
 
     const handleMouseEnter = () => {
-        setHover(true);
+        if (!open) {
+            setHover(true);
+        }
     };
 
     const handleMouseLeave = () => {
-        setHover(false);
+        if (!open) {
+            setHover(false);
+            setIsNavBarOpen(false);
+        }
+
     };
 
     const handleOpenNavbar = () => {
-        // Abrir o navbar somente se o hover for falso
-        if (!hover) {
-            setOpen(true);
-        }
+        setOpen(!open);
+        setIsNavBarOpen(true);
+
     };
 
     const closeNavbar = () => {
         setOpen(false)
-        setHover(false)
+        setIsNavBarOpen(false);
     }
 
     return (
         <div
-            className={`navbar${hover ? "-opener" : open ? "-fixed" : ""}`}
+            className={`navbar${open || hover ? "-fixed" : ""}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -39,8 +46,8 @@ export const Navbar = () => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <div onClick={closeNavbar} onTouchStart={closeNavbar} className={`${hover || open ? 'wrapper-close' : "wrapper-close-transparent"}`}>
-                    <NavbarItem open={open} hover={hover} name="Fechar menu" iconName="menu" isSection={false} />
+                <div onClick={closeNavbar} className={`${hover || open ? 'wrapper-close' : "wrapper-close-transparent"}`}>
+                    <NavbarItem open={open} hover={hover} name={open ? "Fechar menu" : "Fixar Menu"} iconName="menu" isSection={false} />
                 </div>
                 <Link className='custom-link' to="/">
                     <NavbarItem color={location.pathname === "/" ? "#FF7D1A" : "#000000"} isActiveRoute={location.pathname === `/`} open={open} hover={hover} name="Highlights" iconName="map" location={location} />

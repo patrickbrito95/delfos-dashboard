@@ -3,7 +3,7 @@ import Icon from '../Icon';
 import './style.css';
 import { NotificationPill } from '../NotificationPill';
 
-export const NavbarItem = ({ iconName, open = false, name, hover = false, moreOptions = false, notifications, isActiveRoute, color, isSection = true }) => {
+export const NavbarItem = ({ iconName, open, name, hover, moreOptions = false, notifications, isActiveRoute, color, isSection = true }) => {
 
     return (
         <div>

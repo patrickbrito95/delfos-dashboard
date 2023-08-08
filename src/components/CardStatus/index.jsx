@@ -5,7 +5,7 @@ import Icon from '../Icon';
 export const CardStatus = ({ title, iconAvaliation, current, total, newOccurrences, windSpeed }) => {
 
     return (
-        <div className="wrapper-card-status">
+        <div className={`wrapper-card-status`}>
             <div className='card-info-top'>
                 <div className='card-title'>
                     {title}
