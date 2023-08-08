@@ -21,10 +21,6 @@ export const Home = () => {
 
     const { isNavBarOpen } = useNavBarContext();
 
-    console.log(isNavBarOpen)
-
-
-
     return (
         <div>
             <Header />
@@ -68,7 +64,7 @@ export const Home = () => {
                         </Accordion>
                     </div>
                     <div onClick={() => { isExpandFullScreen && setIsOpen(true) }} className='wrapper-accordion'>
-                        <Accordion isCompressed={isOpen} iconName="hand" title="Alertas Preditivos" notification="15">
+                        <Accordion isCenteredContent={true} isCompressed={isOpen} iconName="hand" title="Alertas Preditivos" notification="15">
                             <PredictiveAlertsCard />
                         </Accordion>
                     </div>

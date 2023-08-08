@@ -1,0 +1,134 @@
+table {
+    display: contents;
+    border-radius: 4px 4px 0px 0px;
+    background:#D6DCE3;
+}
+
+.table-container {
+}
+
+.td {
+    display: flex;
+    justify-content: center;
+    margin: 0px 8px;
+}
+
+tbody {
+    color: #77757F;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; 
+    letter-spacing: -0.07px;
+}
+
+tbody .even-row {
+    background-color: #FFFFFF;
+    height: 60px;
+    cursor: pointer;
+}
+
+tbody .odd-row {
+    background-color: #F9F9F9;
+    height: 60px;
+    cursor: pointer;
+}
+
+tbody .odd-row .even-row:hover {
+    opacity: 0.8;
+}
+
+.th {
+    display: flex;
+    width: 85px;
+    height: 64px;
+    padding: 0px 8px;
+    justify-content: space-between;
+    align-items: center;
+    color: #77757F;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.07px
+}
+
+thead {
+    background:#D6DCE3;
+    box-shadow: 0 0 0 1px #D6DCE3;
+    border-radius: 5px;
+}
+
+thead tr {
+    box-shadow: 0 0 0 1px #D6DCE3;
+    border-radius: 5px 5px 0px 0px;
+    height: 65px;
+}
+
+.button-selector {
+    width: auto;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+
+.button-actions {
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #B1B9C3;
+    align-content: center;
+}    
+
+.custom-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px; 
+    background-color: #fff;
+    border: 1px solid #B1B9C3;
+    border-radius: 50%;
+}
+
+.icon-checked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    display: none; 
+    font-size: 16px;
+    color: #000;
+    display: none; 
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #1FD3A6;
+    border: 1px solid #1FD3A6;
+}
+
+.custom-checkbox input:checked ~ .icon-checked {
+    display: block; 
+}

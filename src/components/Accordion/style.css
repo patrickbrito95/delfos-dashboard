@@ -92,3 +92,13 @@
     background: #FFF;
     padding: 25px;
 }
+
+.accordion-content-centered {
+    height: auto;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #CFD4E5;
+    background: #FFF;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}

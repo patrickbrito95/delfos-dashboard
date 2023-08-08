@@ -3,7 +3,7 @@ import './style.css';
 import Icon from '../Icon';
 import { useMediaQuery } from 'react-responsive';
 
-export const Accordion = ({ title, children, iconName, notification }) => {
+export const Accordion = ({ title, children, iconName, notification, isCenteredContent }) => {
     const [isOpen, setIsOpen] = useState(false);
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1170px)' })
 
@@ -36,7 +36,7 @@ export const Accordion = ({ title, children, iconName, notification }) => {
                     <Icon name={`chevron-${isOpen ? 'up' : 'down'}`} />
                 </div>
             </button>
-            {isOpen ? <div className="accordion-content">{children}</div> : null}
+            {isOpen ? <div className={`accordion-content${isCenteredContent ? "-centered" : ""}`}>{children}</div> : null}
         </div>
     );
 };
