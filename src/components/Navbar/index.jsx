@@ -3,6 +3,7 @@ import './style.css';
 import { NavbarItem } from '../NavbarItem';
 import { Link } from 'react-router-dom';
 import { useNavBarContext } from '../../context/NavBarContext';
+import { NavbarItemSubsection } from '../NavbarItemSubsection';
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -53,7 +54,9 @@ export const Navbar = () => {
                     <NavbarItem color={location.pathname === "/" ? "#FF7D1A" : "#000000"} isActiveRoute={location.pathname === `/`} open={open} hover={hover} name="Highlights" iconName="map" location={location} />
                 </Link>
                 <Link className='custom-link' to="/ocorrencias">
-                    <NavbarItem color={location.pathname === "/ocorrencias" ? "#FF7D1A" : "#000000"} isActiveRoute={location.pathname === `/ocorrencias`} open={open} hover={hover} name="Ocorrências" iconName="speakerphone" location={location} />
+                    <NavbarItemSubsection color={location.pathname === "/ocorrencias" ? "#FF7D1A" : "#000000"} isActive={location.pathname === `/ocorrencias`} isOpen={hover} iconName={"speakerphone"} name="Ocorrências">
+                        funfou!
+                    </NavbarItemSubsection>
                 </Link>
                 <Link className='custom-link' to="/performance">
                     <NavbarItem color={location.pathname === "/performance" ? "#FF7D1A" : "#000000"} isActiveRoute={location.pathname === `/performance`} open={open} hover={hover} name="Performance" iconName="chart-bar" notifications={22} location={location} />

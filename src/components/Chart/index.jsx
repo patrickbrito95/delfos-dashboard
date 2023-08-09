@@ -20,7 +20,7 @@ const dashedLineData = [5, 5, 5, 5, 5, 5];
 
 const options = {
     chart: {
-        type: 'column', // Tipo de gráfico de barras
+        type: 'column',
     },
     title: {
         text: null,
@@ -37,31 +37,31 @@ const options = {
         },
         gridLineWidth: 0,
         labels: {
-            enabled: false, // Remover os números do eixo y
+            enabled: false,
         },
         plotLines: [
             {
-                value: lineValue, // Valor da linha reta
-                color: '#000', // Cor da linha reta
-                width: 1, // Espessura da linha reta
-                dashStyle: 'line', // Estilo tracejado para a linha reta
+                value: lineValue,
+                color: '#000',
+                width: 1,
+                dashStyle: 'line',
                 zIndex: 5,
             },
             {
-                value: (lineValue - 1), // Valor da linha tracejada
-                color: '#000', // Cor da linha tracejada
-                width: 1, // Espessura da linha tracejada
-                dashStyle: 'Dash', // Estilo tracejado para a linha tracejada
-                zIndex: 5, // Z-index para colocar a linha tracejada acima das barras
+                value: (lineValue - 1),
+                color: '#000',
+                width: 1,
+                dashStyle: 'Dash',
+                zIndex: 5,
             },
         ],
     },
     credits: {
-        enabled: false, // Remover o link do Highcharts
+        enabled: false,
     },
     plotOptions: {
         column: {
-            colorByPoint: true, // Definir cores personalizadas para as barras
+            colorByPoint: true,
             colors: barData.map((value) => (value > lineValue ? '#ECEDEF' : '#F42829')), // Barras azuis se maior que a linha reta, senão vermelhas
         },
     },

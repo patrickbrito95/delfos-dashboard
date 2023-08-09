@@ -1,3 +1,31 @@
-.teste {
+.wrapper-charts {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
 
+.wrapper-charts::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper-left-chart {
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.wrapper-right-chart {
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+}
+
+.title-newocurrencies {
+    color: #0B1C2C;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    letter-spacing: -0.08px;
 }
