@@ -64,7 +64,7 @@
 
 .ecopower-navbar-item-open {
     background-color: #0B1C2C;
-    color: #ffffff;
+    color: #ffffff !important;
     padding-bottom: 15px;
     font-weight: 400;
     display: flex;

@@ -3,7 +3,7 @@ import Icon from '../Icon';
 import './style.css';
 import { NotificationPill } from '../NotificationPill';
 
-export const NavbarItem = ({ iconName, open, name, hover, moreOptions = false, notifications, isActiveRoute, color, isSection = true }) => {
+export const NavbarItem = ({ iconName, open, name, hover, moreOptions = false, notifications, isActiveRoute, color, isSection = true, lastItem = false }) => {
 
     return (
         <div>
@@ -22,7 +22,7 @@ export const NavbarItem = ({ iconName, open, name, hover, moreOptions = false, n
                         </div>
                     )}
                     <Icon color={color} name={iconName} />
-                    <div>{name}</div>
+                    <div className={lastItem ? 'wrapper-ecopower' : ""}>{name}</div>
                     {notifications && (
                         <div className='wrapper-notification-navbar-item'>
                             <NotificationPill notifications={notifications} />
