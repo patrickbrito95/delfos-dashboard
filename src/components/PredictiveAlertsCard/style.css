@@ -5,6 +5,12 @@ table {
 }
 
 .table-container {
+    max-width: 950px;
+    overflow-x: scroll;
+}
+
+.table-container::-webkit-scrollbar {
+    display: none;
 }
 
 .td {
@@ -36,9 +42,14 @@ tbody .odd-row {
     cursor: pointer;
 }
 
-tbody .odd-row .even-row:hover {
-    opacity: 0.8;
+.even-row:hover {
+    background-color: #ECEDEF;
 }
+
+.odd-row:hover {
+    background-color: #ECEDEF;
+}
+
 
 .th {
     display: flex;
@@ -56,17 +67,19 @@ tbody .odd-row .even-row:hover {
     letter-spacing: -0.07px
 }
 
+
 thead {
     background:#D6DCE3;
-    box-shadow: 0 0 0 1px #D6DCE3;
-    border-radius: 5px;
+    box-shadow: 0 0 0 5px #D6DCE3;
+    border-radius: 10px;
 }
 
 thead tr {
-    box-shadow: 0 0 0 1px #D6DCE3;
-    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0 0 0 5px #ffffff;
+    border-radius: 10px 10px 0px 0px;
     height: 65px;
 }
+
 
 .button-selector {
     width: auto;
@@ -84,7 +97,12 @@ thead tr {
     height: 30px;
     border: 1px solid #B1B9C3;
     align-content: center;
+    cursor: pointer;
 }    
+
+.button-actions:hover {
+    opacity: 0.6;
+}
 
 .custom-checkbox {
     display: inline-block;
@@ -131,4 +149,31 @@ thead tr {
 
 .custom-checkbox input:checked ~ .icon-checked {
     display: block; 
+}
+
+.bullet-green {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 5px;
+    background-color: green;
+}
+
+.bullet-yellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 5px;
+    background-color: yellow;
+}
+
+.bullet-red {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 5px;
+    background-color: red;
 }

@@ -4,7 +4,7 @@ import dataFake from '../../api/fakedata.json';
 import Icon from '../Icon';
 
 export const PredictiveAlertsCard = () => {
-    const [data, setData] = useState(dataFake);
+    const [data,] = useState(dataFake);
     const [sortConfig, setSortConfig] = useState({ key: null, direction: '' });
 
     const requestSort = (key) => {
@@ -63,7 +63,8 @@ export const PredictiveAlertsCard = () => {
                 </td>
                 <td>
                     <div className='td'>
-                        {item.StatusOrigem}
+                        <Icon name="SCADA" />
+                        {item.StatusOrigem === "Status 1" ? <div className='bullet-green' /> : item.StatusOrigem === "Status 2" ? <div className='bullet-yellow' /> : <div className='bullet-red' />}
                     </div>
                 </td>
                 <td>
@@ -115,7 +116,7 @@ export const PredictiveAlertsCard = () => {
 
     return (
         <div className="table-container">
-            <table align='center'>
+            <table>
                 <thead>
                     {renderTableHeader()}
                 </thead>

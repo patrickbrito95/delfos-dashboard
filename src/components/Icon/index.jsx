@@ -334,10 +334,10 @@ const Icon = (props) => {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-arrow-left"
-                    width="24"
-                    height="24"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
-                    strokeWidth="0.8"
+                    strokeWidth="0.9"
                     stroke="blue"
                     fill="none"
                     strokeLinecap="round"
