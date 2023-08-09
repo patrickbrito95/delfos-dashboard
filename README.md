@@ -12,7 +12,7 @@ O Delfos Dashboard é um projeto empolgante desenvolvido em React, Vite, Leaflet
 
 ## Demonstração
 
-Confira a [demonstração do Delfos Dashboard em ação](link_para_demo).
+Confira a [demonstração do Delfos Dashboard em ação](https://delfos-dashboard.vercel.app/).
 
 ## Rodando o projeto em sua máquina
 
