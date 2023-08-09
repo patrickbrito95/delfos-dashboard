@@ -89,3 +89,23 @@
     color: #000000;
     background-color: transparent;
 }
+
+.sub-sections-link {
+    text-decoration: none;
+    color: #77757F;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 210%;
+    letter-spacing: -0.07px;
+    margin-bottom: 24px;
+}
+
+
+.sub-sections-link:hover {
+    color: #FF7D1A;
+    text-decoration: underline;
+}
+
+

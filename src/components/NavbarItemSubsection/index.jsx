@@ -26,26 +26,26 @@ export const NavbarItemSubsection = ({ name, children, iconName, isOpen, isActiv
     }, []);
 
     return (
-        <div ref={accordionRef} className="accordion">
+        <div ref={accordionRef} className="subsection-item">
             {isActive && (
-                <div className='accordion-icon-active'>
+                <div className='subsection-item-icon-active'>
                 </div>
             )}
-            <div className="accordion-header" onClick={toggleAccordion}>
+            <div className="subsection-item-header" onClick={toggleAccordion}>
                 <Icon color={color} name={iconName} />
                 {isOpen && (
-                    <div className="accordion-title">{name}</div>
+                    <div className="subsection-item-title">{name}</div>
                 )}
-                <div className={`accordion-icon ${expanded ? 'expanded' : ''}`}>
+                <div className={`subsection-item-icon ${expanded ? 'expanded' : ''}`}>
                     {isOpen ? (
-                        <div className='accordion-chevron-icon'>
+                        <div className='subsection-item-chevron-icon'>
                             <Icon name={`chevron-${expanded ? 'down' : 'right'}`} />
                         </div>
                     ) : null}
                 </div>
             </div>
             {isNavBarOpen ? (
-                expanded && <div className="accordion-content">{children}</div>
+                expanded && <div className="subsection-item-content">{children}</div>
             ) : null}
         </div>
     );

@@ -48,14 +48,22 @@ export const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
             >
                 <div onClick={closeNavbar} className={`${hover || open ? 'wrapper-close' : "wrapper-close-transparent"}`}>
-                    <NavbarItem open={open} hover={hover} name={open ? "Fechar menu" : "Fixar Menu"} iconName="menu" isSection={false} />
+                    <NavbarItem open={open} hover={hover} name="Fechar menu" iconName="menu" isSection={false} />
                 </div>
                 <Link className='custom-link' to="/">
                     <NavbarItem color={location.pathname === "/" ? "#FF7D1A" : "#000000"} isActiveRoute={location.pathname === `/`} open={open} hover={hover} name="Highlights" iconName="map" location={location} />
                 </Link>
                 <Link className='custom-link' to="/ocorrencias">
-                    <NavbarItemSubsection color={location.pathname === "/ocorrencias" ? "#FF7D1A" : "#000000"} isActive={location.pathname === `/ocorrencias`} isOpen={hover} iconName={"speakerphone"} name="Ocorrências">
-                        funfou!
+                    <NavbarItemSubsection color={location.pathname === (`/ocorrencias` || `/ocorrencias/overview` || `/ocorrencias/tabela` || `/ocorrencias/timeline`) ? "#FF7D1A" : "#000000"} isActive={location.pathname === (`/ocorrencias` || `/ocorrencias/overview` || `/ocorrencias/tabela` || `/ocorrencias/timeline`)} isOpen={hover} iconName={"speakerphone"} name="Ocorrências">
+                        <Link to="/ocorrencias/overview" className='sub-sections-link'>
+                            <div>Overview</div>
+                        </Link>
+                        <Link to="/ocorrencias/tabela" className='sub-sections-link'>
+                            <div>Tabela Detalhada</div>
+                        </Link>
+                        <Link to="/ocorrencias/timeline" className='sub-sections-link'>
+                            <div>Gráfico Timeline</div>
+                        </Link>
                     </NavbarItemSubsection>
                 </Link>
                 <Link className='custom-link' to="/performance">

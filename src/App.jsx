@@ -17,6 +17,9 @@ function App() {
           <Route path="/analises" element={<Home />} />
           <Route path="/relatorios" element={<Home />} />
           <Route path="/config" element={<Home />} />
+          <Route path="/ocorrencias/overview" element={<Home />} />
+          <Route path="/ocorrencias/tabela" element={<Home />} />
+          <Route path="/ocorrencias/timeline" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </NavBarProvider>
